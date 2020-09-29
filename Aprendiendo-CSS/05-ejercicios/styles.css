@@ -1,0 +1,154 @@
+/*
+Ejercicio completocon HTML y CSS:
+1. Crear un documento HTML y vincularlo con un CSS.
+2. Crear una estructura HTML que cuente con un CONTENEDOR GENERAL, CABECERA, MENU, BARRA LATERAL,
+SECCION DE CONTENIDO PRINCIPAL, ELEMENTOS DENTRO DEL CONTENEDOR PRINCIPAL, Y FOOTER.
+3. Todo el contenido debe estar dentro del contenedor general y su ancho sera de 1200px y estar centrado.
+4. Header... debe ocupar el 100% del ancho y tener un texto grande centrado.
+5. Menu... debe tener los elementos uno al lado de otro.
+6. El contenido principal debe tener un ancho del 70%.
+7. El contenido dentro del contenedor principal debe ser una cuadricula con 4 lineas de 2 cajas.
+8. La barra lateral debe tener un ancho del 30%.
+9. El footer debe tener un ancho del 100% del div que lo contiene y estar abajo del todo.
+*/
+
+*{
+    /*Reseteo de la pagina*/
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+#ContenedorGeneral{
+    width: 1200px; /*Ancho, no se ve pero se coloca un border para visualizarlo*/
+    border: 1px solid #cccccc;
+    margin: 0px auto; /*Para centrarlo*/
+    margin-top: 20px; /*Bajar un poco el margen de arriba*/
+    
+}
+
+#Cabecera{
+    width: 100%; /*Ancho*/
+    height: 100%; /*Alto*/
+    background: rgb(44, 44, 209); /*Fondo*/
+    color: white; /*Color del texto*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /*Fuente del texto*/
+    font-size: 20px; /*Texto mas grande*/
+    text-align: center;
+    padding-top: 10px; /*Los padding son para alejar un poco el texto del borde*/
+    padding-bottom: 10px;
+}
+
+#clearfix{
+    float: none;
+    clear: both;
+}
+
+#Menu{
+    background-color: #eeeeee;
+}
+
+#Menu ul li{
+    display: block;
+    float: left; /*Ponerlos a la izquierda*/
+    /*
+    display: inline-block; /*Para poner los elementos uno al lado de otro*/
+    /*Tambien se puede usar*/
+    /*display: block; Para poner los elementos en forma de bloque y modificarlo*/
+    border-right: 1px solid #cccccc; /*Separador en forma de borde*/
+}
+
+#Menu ul li a{
+    color: #444444; /*Poner color a los enlaces (texto)*/
+    display: block; /*Para que se pueda redirigir en cualquier parte de la caja*/
+    padding: 15px; /*Separar el texto del borde, se cambio del #Menu ul li{*/
+}
+
+#Menu ul li:hover{
+    background: rgb(19, 19, 139);
+    cursor: pointer; /*Para poner el dedo del cursor cuando se pase por el menu*/
+}
+
+#Menu ul li:hover a {
+    /*Pseudoclase. El hover es para cuando se pasa el mause por arriba de esos elementos*/
+    color: white;
+}
+
+#SeccionContenidoPrincipal{
+    width: 69%; /*Ancho*/
+    /*border: 1px solid green;*/    
+    float: left; /*Mover*/
+}
+
+#BarraLateral{
+    width: 30%;
+    border: 1px solid red;
+    float: left; /*Mover*/
+    min-height: 500px; /*Poner un minimo de recuadro de texto*/
+    max-height: 650px; /*Poner un maximo de recuado de texto*/
+    text-align: center;
+    overflow-y: scroll; /*Poner el texto con barra de desplazamiento*/
+}
+
+#SeccionContenidoPrincipal h1{
+    text-align: center; /*Centrar el texto*/
+    border-bottom: 1px solid #cccccc; /*Colocar un borde en la parte inferior del texto*/
+    padding: 15px; /*Separar el texto del borde*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 2px gray; /*Poner sombra al texto, valores: eje_x eje_y difuminado y color de la sombra*/
+    
+}
+
+#SeccionContenidoPrincipal .caja{
+    width: 40%; /*Ancho*/
+    height: 250px; /*Alto*/
+    background-color: #cccccc;
+    border: 1px solid gray;
+    color: #444444;
+    float: left; /*Acomodar las cajas a la izquierda*/
+    margin: 20px; /*Separar cajas*/
+    margin-left: 40px; /*Poner las cajas en el centro*/
+    text-align: center;
+    line-height: 240px; /*Bajar el texto para centrar*/
+    text-transform: uppercase; /*Poner el texto en mayusculas*/
+    box-shadow: 5px 5px 15px gray; /*Poner sombras a las cajas (exterior), se coloca inset para sombra interior despues del color*/
+    border-radius: 25px; /*Colocar bordes a las cajas (en general), para ser mas especifico se coloca los px a cada vertice*/
+}
+
+#Footer{
+    width: 100%;
+    background-color: #eeeeee;
+    text-align: center;
+    color: #444444;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #cccccc;
+
+}
+
+
+.Caja{
+    top: 300px; /*Se coloca la caja libre arriba en la parte superior izquerda*/
+    left: 50%; /*Mueve la caja a un 50%*/
+    border: 1px solid black;
+    background-color: red;
+    color: white;
+    height: 50px;
+    width: 50px;
+    font-size: 14px;
+
+}
+
+.CajaLibre{
+    position: absolute;
+    /*Hay tres tipos de posicionamiento: relativa(por defecto), absoluta y fija. En la absoluta
+    podemos mover cualquier elemento al lugar que se desee de la pagina*/
+}
+
+.CajaFija{
+    position: fixed; /*Posicion fija, sirve para que ese elemento no se mueva al deslizar la pagina*/
+    top: 300px;
+    left: 0%;
+}
+
+

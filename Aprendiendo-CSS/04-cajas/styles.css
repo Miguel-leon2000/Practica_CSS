@@ -1,0 +1,44 @@
+body{
+    padding: 50px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.caja {
+    padding: 10px;
+    background-color: rgb(130, 130, 204);
+    width: 200px; /*Ancho de la caja*/
+    height: 200px; /*Largo de la caja*/
+    border: 5px solid red;
+    text-align: center; /*Colocar el texto en el centro*/
+    line-height: 195px; /*Colocar el texto en el centro de la caja*/
+    margin: 30px; /*Margen entre las cajas*/
+    margin-bottom: 2px; /*margen inferior*/
+    margin-left: 35px; /*margen izquierdo*/
+    float: left; /*Mover las cajas en horizontal*/
+    
+}
+
+#cajas{
+    max-width: 885px; /*Poner mas cajas dentro de la pantalla*/
+    border: 1px solid black;
+}
+
+p{
+    font-weight: bold   ;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: yellow;
+}
+
+.clearfix{
+    float: none; 
+    clear: both;  /*Limpiar todos los flotados*/
+}
+
+h2{
+    line-height: 50px;
+}

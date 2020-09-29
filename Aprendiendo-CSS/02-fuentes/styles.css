@@ -1,0 +1,33 @@
+h1{
+	font-family: Arial, Helvetica, sans-serif; /*Fuente del texto*/
+	font-family: 'Long Cang', cursive;
+	text-transform: uppercase; /*Colocar el texto en mayusculas*/
+	font-size: 50px;
+
+	/*Colores*/
+
+	/*Colores del sistema*/
+	color: red;
+
+	/*Colores hexadecimales*/
+	color: #01ff56;
+
+	/*Colores RGB*/
+	color: rgb(99, 71, 71);
+
+	/*Colores RGBA, el A le da transpararencia o opacidad al color*/ 
+	color: rgba(255, 0, 0, 0.589)
+
+}
+
+h3{
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 20px; /*Es el tamaño del texto. em es igual a 16px*/
+	font-style: italic; /*Poner el texto en cursivas*/
+}
+
+p{
+	font-family: sans-serif;
+	font-size: 18px;
+	font-weight: bold; /*Poner el testo en negritas*/
+}

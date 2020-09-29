@@ -1,0 +1,46 @@
+body{
+    background-color: aqua; /*Colocar color en el fondo*/
+    background-image: url("img/paisaje2.jpg"); /*Colocar una imagen*/
+    background-size: 100% 100%; /*Tamaño de la imagen de fondo*/
+    background-attachment: fixed; /*Que la imagen quede estatica*/
+    color: black; /*Color del texto*/
+}
+
+#caja{
+    font-family: 'Long Cang', cursive; /*Fuente de texto*/
+    border: 5px solid blue; /*Agregar un borde en el texto*/
+    padding: 10px; /*Margen interior, para separarlo del border*/
+    text-transform: uppercase;
+    background-color: yellow;
+    background-image: url(img/patron3.jpg);
+    color: white;
+    text-align: center;
+    line-height: 30px; /*---Separar lineas de texto----*/
+}
+
+#subtitulo{
+    border: 5px solid orange;
+    padding: 1px;
+    background-color: rgb(255, 210, 113);
+    color: black;
+    font-size: 25px;
+}
+
+p{
+    font-size: 20px;
+    text-transform: uppercase; /*Colocar el texto en mayusculas*/
+    font-weight: bold; /*Texto en negritas*/
+    border: 5px solid blue;
+    background-color: white;
+    padding: 10px;
+    line-height: 28px; /*Separar lineas de texto*/
+    word-spacing: 2px; /*Espacio entre palabras*/
+    letter-spacing: 1px; /*Espacio entre palabras*/
+    text-indent: 50px; /*Identacion de textos*/
+    text-align: justify; /*Para textos justificados*/
+
+    /*
+    text-decoration: underline; /*Subrayar texto*/
+    
+
+}

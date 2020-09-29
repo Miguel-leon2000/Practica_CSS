@@ -1,0 +1,51 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold; /*Poner el texto en negritas*/   
+
+}
+
+/*:first-child es una pseudoclase para modificar el primer elemento es decir el primer hijo de la lista*/
+ul li:first-child{
+    color: blueviolet;
+}
+
+/*:last-child es una pseudoclase para modificar el ultimo elemento es decir el ultimo hijo de la lista*/
+ul li:last-child{
+    color: blue;
+}
+
+/*Con esta pseudoclase se puede poner el numero de la lista a modificar*/
+ul li:nth-child(2){
+    color: brown;
+}
+
+/*El :link se utiliza para cuando aun no se ha visitado el enlace*/
+a:link{
+    color:gray;
+}
+
+/*En caso de que la pagina ya se haya visitado*/
+a:visited{
+    color: green;
+}
+
+/*:hover Cuando pase por encima del raton*/
+a:hover{
+    color: blue;
+}
+
+/*:active Cuando le este pulsando se modifique*/
+a:active{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*Para cuando se selecione la caja y cambie de color*/
+input[type="text"]{
+    margin-top: 20px;
+    padding: 10px;
+}
+
+input[type="text"]:focus{
+    border: 4px dashed red;
+}

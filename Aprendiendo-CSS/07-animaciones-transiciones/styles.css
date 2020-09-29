@@ -1,0 +1,70 @@
+.Boton{
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    padding: 15px;
+    background-color: chartreuse;
+    border: 2px solid rgb(50, 182, 50);
+    display: block;
+    width: 80px;
+    text-align: center;
+    transition: all 100ms; /*Se puede especificar a que propiedades se le puede hacer transicion y su duracion separados por comas*/
+}
+
+/*Cuando se pasa el cursor dentro del boton (transicion)*/
+.Boton:hover{
+    background-color: tomato;
+    border-radius: 10px;
+    border: 2px solid red;
+}
+
+#Caja{
+    width: 250px;
+    height: 250px;
+    border: 5px solid black;
+    background-color: chocolate;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    line-height: 250px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase; /*Poner en mayusculas*/
+
+    animation-name: desplazamiento; /*Aplicar el keyframe*/
+    animation-duration: 15s; /*Duracion*/
+    animation-iteration-count: infinite; /*Para hacerla infinita*/
+    animation-timing-function: linear; /*Para que NO vaya rapido y despues lento*/
+}
+
+/*Propiedad keyframes. Fotogramas claves o momentos de animacion. Posteriormente su nombre de la animacion */
+@keyframes desplazamiento{
+    /* Estructura para una forma corta
+    from{
+    }
+
+    to{
+    }
+    */
+
+    0%{
+        margin-left: 0px;
+        transform: rotate(0deg); /*Rotar la caja de 0 grados*/
+    }
+
+    50%{
+        margin-left: 1000px; /*Hasta donde va a llegar*/
+        transform: rotate(360deg); /*Rotar la caja de 360 grados*/
+        border-radius: 999px; /*Hacer de la caja un circulo*/
+    }
+
+    75%{
+        background-color: darkblue;
+    }
+
+    100%{
+        margin-left: 0px; 
+        transform: rotate(0deg); /*Rotar la caja de 0 grados*/
+    }
+}

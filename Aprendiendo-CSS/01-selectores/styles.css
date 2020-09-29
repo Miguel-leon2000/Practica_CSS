@@ -1,0 +1,90 @@
+/*
+#### SELECTORES ####
+*/
+
+/*Selector Universal*/
+
+*{
+	font-family: Verdana; /*Tipo de fuente para todo el HTML*/
+}
+
+/*Selector de etiqueta*/
+
+h1{
+	background: red; /*Fondo*/
+	color: white;
+	padding: 10px; /*Margen interior*/
+}
+
+a{
+	font-size: 18px; /*Tamaño*/
+	color: green;
+	text-decoration: none; /*Quitar el subrayado en los enlaces*/
+}
+
+footer a{ /*Señala en el pie de pagina y un enlace en particular*/
+	color: red;
+}
+
+/*Selector de id (Unico elemento)*/
+
+#descripcion{ /*Se selecciona id con # y se pone el valor. Se puede agregar otro id colocando coma y su #*/
+	border: 1px solid black;
+	padding: 15px; /*Margen*/
+
+}
+
+/*Selector de clase, en este caso para multiples parrafos*/
+
+.parrafo, .parrafo2{ /*Puede ir solo una clase o varias separadas por comas*/
+	font-style: italic; /*Texto en cursiva*/
+	text-decoration: underline; /*Texto Subrayado*/
+	font-weight: bold; /*Texto en negritas*/
+}
+
+/*Selector de atributo*/
+
+#usuario form{ /*Darle estilos al formulario con id usuario*/
+	border: 4px solid blue;
+	margin-top: 15px; /*Margen arriba para separar*/
+	margin-bottom: 15px; /*Margen abajo*/
+	padding: 20px; /*Margen interior*/
+}
+
+#usuario form *{ /*Para que todo el formulario este en una columna*/
+	display: block; /*display para organizar*/
+}
+
+input[type="text"]{ /*Darle estilos a los input con la propiedad de tipo texto*/
+	margin-bottom: 15px; /*Darle espacio entre ellos*/
+	padding: 5px;
+	width: 300px;
+	} 
+
+input[type="submit"]{
+	background: green;
+	color: white;
+	padding: 10px;
+	font-size: 17px; /*Tamaño de la letra*/
+	text-transform: uppercase;/*Cambiar de minuscula a mayuscula o viceversa*/
+	border: 1px solid black;
+	cursor: pointer; /*Colocarle el dedo cuando vayamos arriba del raton*/
+}
+
+/*Selectores hijos*/
+
+#menu > li > a{ /*Solo los primeros elementos de la lista, sin sublistas*/
+	font-size: 18px; /*Tamaño*/
+	color: red;
+	text-decoration: none;
+}
+
+/*Prioridad, cuando es mas especifica le da prioridad*/
+
+#Saludo h1{
+	background: green;
+}
+
+h1{
+	background: blue !important; /*Se le coloca !important para indicar mayor prioridad*/
+}

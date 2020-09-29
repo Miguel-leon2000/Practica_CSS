@@ -1,0 +1,520 @@
+/*Fuentes*/
+
+/*Importar fuente*/
+
+@font-face{
+    font-family: "fajala"; /*Indica el nombre a la fuente*/
+    src: url("fonts/FjallaOne-Regular.ttf") format("truetype"); /*Donde se encuentra (principal)*/
+
+    font-weight: normal;
+    font-style: normal; /*Las dos para que procese la fuente normal*/
+}
+
+@font-face{
+    font-family: "nevis"; /*Indica el nombre a la fuente*/
+    src: url("fonts/nevis.eot"); /*Donde se encuentra (principal)*/
+
+    src: url("fonts/nevis.eot?#iefix") format("embedded-opentype"), /*Para cargar la fuente en caso de que no se cargue la otra, ?#iefix es un prefijo en caso de que no cargue la fuente en el navegador. Format es el formato de la fuente*/
+         url("fonts/nevis.woff") format("woof"),
+         url("fonts/nevis.ttf") format("truetype"),
+         url("fonts/nevis.svg") format("svg");
+
+    font-weight: normal;
+    font-style: normal; /*Las dos para que procese la fuente normal*/
+}
+
+@font-face{
+    font-family: "icons"; /*Indica el nombre a la fuente*/
+    src: url("fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg"), /*#Web para seleccionar el tipo de fuente*/
+        url("fonts/websymbols-regular-webfont.eot");
+
+    src: url("fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"), /*Para cargar la fuente en caso de que no se cargue la otra, ?#iefix es un prefijo en caso de que no cargue la fuente en el navegador. Format es el formato de la fuente*/
+         url("fonts/websymbols-regular-webfont.woff") format("woof"),
+         url("fonts/websymbols-regular-webfont.ttf") format("truetype");
+
+
+    font-weight: normal;
+    font-style: normal; /*Las dos para que procese la fuente normal*/
+}
+
+/*ESTILOS GENERALES*/
+
+/*Reseteo de la pagina para que no tenga margenes por los lados*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/*Fondo de la pagina*/
+body{
+    background-image: url("../img/fondo.jpg");
+}
+
+h4{
+    text-align: center;
+}
+
+/*Modificar los enlaces*/
+#content a{
+    color: #529125;
+    text-decoration: none; /*Quitar el subrayado de los enlaces*/
+}
+
+#content a:hover{
+    color: #155c21;
+    font-weight: bold;
+    
+}
+
+#content a:visited{
+    color: #529125;
+    
+}
+
+.icon{
+    font-family: "icons";
+    float: left;
+    margin-right: 5px; /*Separarlo del texto*/
+    margin-top: -2px; /*Subir la imagen*/
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+/*DAR ESTILOS A FORMULARIO, selector multiple*/
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select{
+    border: 1px solid #c9c9c9;
+    box-shadow: 0px 0px 2px #cccccc inset; 
+    background-color: white;
+    padding: 1px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: gray;
+    transition: all 300ms;
+}
+/*Cuando se pulsa dentro de una caja de formulario*/
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+select:focus{
+    border: 1px solid #70b231; 
+    color: black; /*Cuando se esta escribiendo esta en negro y despues aparece en gris*/
+}
+
+/*Dar estilos a los botones*/
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button{
+    display: block; /*Para poder manipularlo como queramos*/
+    border-radius: 2px; /*Borde redondiado*/
+    border: 1px solid green;
+    width: 60px;
+    padding: 3px;
+    background-color: #70b231;
+    cursor: pointer; /*Cuando pase por encima del cursor y se ponga un dedo*/
+    color: white;
+}
+
+/*Cuando pase por arriba de los botones, pseudoclase hover*/
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover{
+    box-shadow: 0px 0px 2px gray;
+}
+
+/*Cuando este pulsando el boton, pseudoclase active*/
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+button:active{
+    box-shadow: 0px 0px 3px gray inset;
+    text-shadow: 0px 0px 1px #cccccc;
+}
+
+
+
+/*Header donde va el logotipo y el nombre*/
+#Cabecera{
+    min-width: 405px; /*El minimo que puede ocupar de ancho*/
+    width: 100%; /*Ocupe el 100% de la cabecera*/
+    height: 250px; /*Altura de la cabecera junto con el logotipo y nombre*/
+    margin: 0px auto; /*Centrar*/
+
+}
+
+#Cabecera a{
+    text-decoration: none; /*Para quitar los estilos del enlace.. es decir el subrayado*/
+}
+
+#Cabecera, #Logotipo{
+    width: 770px; /*Ancho del logotipo*/
+    margin: 0px auto; /*Centar el logo*/
+    padding-top: 20px; /*Separar el logo de la parte superior*/
+}
+
+#Cabecera, #Logotipo, img{
+    display: block; /*Para que se comporte como un bloque la imagen*/
+    text-align: center; /*Centrar el logotipo*/
+    margin: 0px auto; /*Centrar imagen*/
+    width: 140px;
+}
+
+#Cabecera h1{
+
+    text-align: center;
+    font-size: 40px;
+    font-family: "nevis";
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 10px;
+
+    /*Efecto tridimensional: Sombras*/
+    text-shadow: 0px 2px 1px #333333;
+    transition: all 500ms; /*Efecto de transicion al entrar a la pagina*/
+}
+
+#Cabecera h1:hover{
+    text-shadow: 0px 2px 2px #3801ff, 0px 0px 3px #70b231; /*Se aplican dos sombras para dar el efecto de resaltar*/
+}
+
+#Cabecera h1 a{
+    color: #70b231;
+}
+
+/*BARRA DE NAVEGACION*/
+
+nav{
+    width: 100%;
+    height: 40px;
+    background-color: #333333;
+    color: white;
+    font-family: sans-serif, Helvetica, Arial;
+    font-size: 14px;
+    box-shadow: 0px 0px 2px gray; /*Sombra o difimunado*/
+}
+
+nav ul{
+    list-style: none;
+    text-decoration: none;
+    margin: 0px auto /*Centrar*/;
+    width: 1050px; /*Hasta donde va a comenzar los botones de la lista*/   
+}
+
+/*Selectores hijos (> se refiere el primer hijo)*/
+nav > ul > li{
+    line-height: 40px; /*Para que se centre verticalmente y el espacio entre ellos*/
+    float: left; /*Para juntarlos, uno al lado de otro*/
+    border-right: 1px solid gray; /*Para poner una separacion entre ellos con un borde de 1px*/
+}
+
+nav > ul > li a{
+    color: white;
+    text-decoration: none;
+    display: block; /*Para modificarlo a mi manera. Se comporta como un bloque*/
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav > ul > li a:first-child{
+    border-left: 1px solid gray;
+}
+
+/*El hover es una pseudoclase*/
+
+nav > ul > li:hover{
+    background-color: #70b231;
+    box-shadow: 0px 0px 5px green; /*El inset es un sombreado interior*/
+}
+
+/*MENU DESPLEGABLE*/
+
+nav > ul > li > ul {
+
+    /*Estilos para la caja del menu despegable*/
+    display: none; /*Para ocultar el error*/
+    position: absolute; /*No disfigure el sitio web*/
+    width: 160px;
+    box-shadow: 0px 2px 2px gray;
+    z-index: 1; /*Para que este por encima por el resto de elementos*/
+}
+
+/*Para mostrar el menu despegable pero sin estilos*/
+nav > ul > li:hover > ul{
+    display: block;
+}
+
+
+/*Estilos dentro de cada caja del menu despegable*/
+nav > ul > li:hover > ul > li{
+    background-color: #f2f1f0;
+    border-bottom: 1px solid #d6d6d6;
+    padding: 8px;
+    line-height: 25px; /*Centrar verticalmente*/
+    font-size: 13px;
+    transition: all 30ms;
+}
+
+nav > ul > li:hover > ul > li a{
+    color: #666666;
+    border-left: none;
+}
+
+nav > ul > li:hover > ul > li:hover{
+    box-shadow: 0px 0px 2px gray inset;
+    background-color: rgb(230, 228, 228);
+}
+
+/*Fin de los estilos dentro de la caja del menu despegable*/
+
+/*Hacer la imagen del logo giratorio*/
+#Cabecera img{
+    animation-name: desplazamiento; /*Aplicar el keyframe*/
+    animation-duration: 500ms; /*Duracion*/
+    animation-iteration-count: initial; /*Para hacer la rotacion una vez*/
+    animation-timing-function: linear; /*Para que NO vaya rapido y despues lento*/
+}
+
+/*Propiedad keyframes. Fotogramas claves o momentos de animacion. Posteriormente su nombre de la animacion */
+@keyframes desplazamiento{
+   
+    from{
+        margin-left:  0px;
+    }
+
+    to{
+        margin-left: 130px;
+    }
+
+}
+
+/*CONTENIDO CENTRAL*/
+
+#content{
+    width: 1250px; /*Anchura*/
+    min-height: 1100px; /*Altura minima, para ponerle un scroll(barra de desplazamineto)*/
+    margin: 0px auto; /*Para mover el contenido un poco hacia la derecha*/  
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*BARRA LATERAL*/
+
+#aside, #frase{
+    /*clear: both; /*Para ponerlo abajo de la barra lateral*/
+    width: 200px; /*Anchura a la caja*/
+    float: left; /*La caja va a ir flotada a la izquierda, para ordenarlo en forma vertical*/
+    margin: 30px; /*Margen por todos lados*/
+    background-color: white;
+    border: 1px solid #cccccc;
+    box-shadow: 0px 2px 3px #cccccc; /*Eje x, Eje y, Sombreado*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#frase{
+    /*clear: both; /*Para que se coloque debajo de la barra lateral*/
+    width: 180px; /*Se le resta el padding*/
+    padding: 10px; /*Con el padding aumenta su anchura*/
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Poner color a los encabezados*/
+.red{
+    color: #9b2422 !important; /*Se le coloca !important para que se establezca el color, ya que de lo contrario no aparece*/
+}
+
+.blue{
+    color: #0c73f2 !important;
+}
+
+.orange{
+    color: #fbbc05 !important;
+}
+
+
+
+#aside .widget{
+    display: block; /*Para que se comporte como una caja*/
+    width: 180px;
+    margin: 5px auto; /*Margen y que lo centre*/
+    padding: 8px; /*Separacion por arriba y por abajo*/
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    border-bottom: 1px dashed; /*Borde abajo punteado - dashed*/
+
+}
+
+#aside .widget:last-child{
+    margin-bottom: 20px; /*Dar un espaciado al final*/
+}
+
+#aside h3{
+    display: block; /*Para que se comporte como un bloque*/
+    color: #333333;
+    width: 100%; /*Que ocupe el 100% del encabezado*/
+    text-align: center;
+    padding-top: 2px; /*Separacion de encabezado por arriba y abajo*/
+    padding-bottom: 2px;
+    margin-bottom: 15px;
+    background-color: #f2f3f2;
+    border: 1px solid #cccccc;
+    border-left: none; /*Quitar borde izquierdo*/
+    border-right: none;
+
+}
+
+/*Separar los enlaces para mejro visualizacion*/
+#aside li{
+    margin-top: 8px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    list-style: square; /*Colocar un cuadrado en cada uno de los elementos de la lista*/
+}
+
+/*Formularios barra lateral*/
+
+/*Cajas de texto*/
+#aside div label,
+#aside div input[type="text"],
+#aside div input[type="email"],
+#aside div input[type="password"],
+#aside div a{
+    display:block;
+    width: 95%; 
+    margin-top: 2px; /*Para separar de arriba y abajo los input*/
+    margin-bottom: 2px;
+
+}
+
+/*Botones*/
+#aside div input[type="button"],
+#aside div input[type="submit"],
+#aside div button{
+    /*El button es el que hay en HTML5*/
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/*Centrar la enrada de texto y los label (etiquetas)*/
+#aside input,
+#aside label{
+    margin: 0px auto;
+    text-align: center;
+}
+
+/*SECCIONES*/
+
+#sections{
+    float: right; /*Alinear todas las secciones hacia abajo, para subirlo se quita el clear: both en barra lateral*/
+    width: 75%; /*Ocupe el resto de la pagina*/
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 20px;
+
+}
+
+#sections .titulo{
+   font-family: fajala; /*Se importan fuentes con font-face*/
+   font-size: 24px;
+   font-weight: normal;
+   letter-spacing: 1px;
+   text-align: center;
+   margin-top: -20px; /*Subir el titulo hacia arriba, despues de poner los stickers*/
+   padding-top: 20px;
+   padding-bottom: 10px;
+   border-bottom: 1px solid #cccccc;
+}
+
+#sections section{
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    box-shadow: 0px 0px 4px #c9c9c9;
+    color: #333333;
+    font-size: 16px;
+    overflow: hidden; /*Todo lo que sobresalga de las secciones se oculte*/
+}
+
+#sections .article{
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#sections .date{
+    color: gray;
+    font-size: 14px;
+}
+
+#sections .stickerOne{
+    position: absolute;
+    margin-top: -47px; /*Subir o bajar imagen*/
+    z-index: 0; /*Para que tenga ese nivel, para que se muestre la capa por delante y por detras*/
+    width: 50px;
+    height: 70px;
+}
+
+#sections .stickerTwo{
+    position: absolute;
+    margin-top: -47px;
+    margin-left: 849px; /*Mover hacia la derecha*/
+    width: 50px;
+    height: 70px;
+}
+
+#sections .article a{
+    display: block;
+    width: 180px;
+
+}
+
+#sections .article a:hover{
+    font-weight: 550; /*Corregir problema de los enlaces*/
+    color: rgb(53, 145, 57);
+
+}
+
+/*PIE DE PAGINA*/
+
+#history{
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-weight: bolder;
+    
+}
+
+#history a:hover{
+    color: tomato;
+    
+}
+
+#footer{
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 40px;
+    background-color: #333333;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    box-shadow: 0px 0px 2px gray;
+}
+
+#footer a{
+    text-decoration: none;
+    color: #70b231;
+}
+
+#footer a:hover{
+    color: #fbbc05;
+}
