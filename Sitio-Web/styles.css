@@ -8,6 +8,12 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*Para cambiar el color de fondo al seleccionar el texto*/
+p::selection{
+    background-color: red;
+    color: white;
+}
+
 .contenedor{
     width: 80%;
     max-width: 1000px; /*Limite de la anchura del contenedor*/
@@ -23,7 +29,7 @@ header {
 header img{
     display: block;
     margin: 0px auto;
-    width: 15%;
+    width: 30%;
     height: auto; /*Para que no se desproporcione la imagen*/
 }
 
@@ -87,7 +93,7 @@ footer{
 /*MENU*/
 
 header label img{
-    width: 30px;
+    width: 30px; /*Tamaño de la imagen png del icono*/
     height: 30px;
 }
 
