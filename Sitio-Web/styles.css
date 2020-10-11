@@ -1,0 +1,83 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: #fd7a00;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor{
+    width: 80%;
+    max-width: 1000px; /*Limite de la anchura del contenedor*/
+    margin: 0px auto;
+    overflow: hidden; /*Solo que la información este dentro del contendor y no se pase*/
+}
+
+header {
+    background-color: white;
+    margin: 20px 0; /*El 0 es para que la informacion este dentro del contenedor y no salga*/
+}
+
+header img{
+    width: 100%;
+    height: auto; /*Para que no se desproporcione la imagen*/
+}
+
+header h1{
+    color: rgb(7, 7, 7);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.main{
+    width: 70%;
+    padding: 20px;
+    float: left;
+    background-color: teal;
+    box-sizing: border-box; /*Permite respetar el padding sin que se modifique el texto*/
+}
+
+aside{
+    width: 30%;
+    padding: 20px;
+    float: left;
+    background-color: gray;
+    box-sizing: border-box; /*Ajustar la barra lateral a la derecha*/
+}
+
+footer{
+    width: 100%;
+    padding: 20px;
+    float: left;
+    clear: both;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px){
+    /*Ajustar el aside hacia abajo del .main cuando se reduce el tamaño */
+
+    .main{
+        width: 100%;
+    }
+
+    aside{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    /*Eliminar los bordes de ambos lados del contenedor cuando sea una pantalla pequeña*/
+
+    .contenedor{
+        width: 100%;
+    }
+
+    aside{
+        display: none; /*Para desaparecer la barra lateral en pantallas pequeñas*/
+    }
+}
