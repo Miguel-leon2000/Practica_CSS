@@ -1,6 +1,9 @@
 *{
     padding: 0px;
     margin: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body{
@@ -99,6 +102,12 @@ a{
     padding: 14px 5px;
     border-right: 1px solid gray;
     font-size: 75%;
+}
+
+/*SUBMENU*/
+
+.submenu{
+    
 }
 
 /*FIN DEL ENCABEZADO*/
