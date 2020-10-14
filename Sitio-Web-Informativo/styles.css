@@ -40,6 +40,12 @@ header #nombre_logo{
     text-shadow: 2px 2px 2px rgb(138, 138, 138);
 }
 
+header #nombre_logo:hover{
+    transition: all 0.5s;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255)
+    
+}
+
 .clearfix{
     float: none;
     clear: both;
@@ -95,6 +101,194 @@ a{
     font-size: 75%;
 }
 
+/*FIN DEL ENCABEZADO*/
 
+/*INICIO DEL MAIN*/
 
+.main .btn-inicio{
+    display: block;
+    background-color: rgb(0, 17, 255);
+    text-align: center;
+    width: 90px;
+    height: 23px;
+    margin: 0px auto;
+    margin-top: 20px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.main .btn-inicio:hover{
+    background-color: rgb(250, 0, 0);
+    transition: all 0.7s;
+}
+
+.main h2{
+    font-size: 35px;
+    text-align: center;
+    margin-top: 13px;
+}
+
+.main .perfil ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 25px;
+}
+
+.main .perfil ul li{
+    margin-left: 15px;
+    color: #cccccc;
+    font-size: 13px;
+}
+
+.main .perfil ul a:hover{
+    color: red;
+    transition: all 0.3s;
+}
+
+.main .perfil ul li img{
+    display: block;
+    width: 37px;
+    border-radius: 50%;
+    margin-top: -9px;   
+}
+
+.main .articulos{
+    overflow: hidden;
+    float: left;
+    margin-top: 50px;
+    border: 1px solid #36373a;
+    background-color: #1f2024;
+    width: 65%;
+    margin-left: 30px;
+    padding: 20px;
+    line-height: 25px;
+    box-sizing: border-box;
+}
+
+.main .articulos img{
+    display: block;
+    margin: 0px auto;
+    width: 60%;
+    padding: 20px;
+}
+
+/*FIN DEL MAIN*/
+
+/*INICIO DEL ASIDE*/
+
+.widget .categorias{
+    border: 1px solid #36373a;
+    background-color: #1f2024;
+    width: 28%;
+    float: right;
+    margin-top: 25px;
+    margin-right: 2%;
+    box-sizing: border-box;
+    padding: 20px;
+    padding-top: 15px;
+    line-height: 25px;
+}
+
+.widget ul{
+    list-style: none;
+}
+
+.widget .redes-sociales ul{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.widget .redes-sociales ul a{
+    padding: 5px 10px;
+}
+
+.redes-sociales ul #facebook{
+    margin-right: 15px;
+    border-radius: 3px;
+    padding-top: 6px;
+    background-color: rgb(0, 17, 255);
+}
+
+.redes-sociales ul #twitter{
+    margin-right: 15px;
+    border-radius: 3px;
+    padding-top: 6px;
+    background-color: rgb(0, 132, 255);
+}
+
+.redes-sociales ul #youtube{
+    margin-right: 15px;
+    border-radius: 3px;
+    padding-top: 6px;
+    background-color: rgb(255, 0, 0);
+}
+
+.redes-sociales ul #instagram{
+    margin-right: 15px;
+    border-radius: 3px;
+    padding-top: 6px;
+    background-color: #c13584;
+}
+
+.categorias li a:hover{
+    color: red;
+}
+
+.categorias ul li:first-child{
+    margin-top: 15px;
+}
+
+.categorias ul li img{
+    float: left;
+    display: block;
+    width: 25px;
+    margin-right: 1px;
+}
+
+.categorias h2 img{
+    float: left;
+    display: block;
+    width: 25px;
+    margin-right: 5px;
+}
+
+/*FIN DEL ASIDE*/
+
+footer{
+    float: left;
+    clear: both;
+    display: block;
+    width: 98%;
+    margin-left: 1%;
+    background-color: #181818;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border: 1px solid blue;
+}
+
+footer img{
+    display: block;
+    margin: 0px auto;
+    width: 9%;
+    margin-top: 15px;
+}
+
+footer p{
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 30px;
+}
+
+footer a{
+    color: red;
+}
+
+footer a:hover{
+    color: blue;
+    transition: 0.3s;
+}
 
