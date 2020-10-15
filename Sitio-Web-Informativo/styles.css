@@ -103,9 +103,34 @@ a{
 
 /*SUBMENU*/
 
-.submenu{
-    
+.menu .submenu{
+    position: absolute;
+    display: none;
 }
+
+.menu .submenu li a{
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.menu .submenu a{
+    text-align: left;
+    width: 100%;
+}
+
+.menu li:hover .submenu{
+    display: block;
+    width: auto;
+}
+
+.menu .submenu li:hover a{
+    background: #333333;
+    color: red;
+    transition: color 0.2s;
+}
+
+/*FIN DEL SUBMENU*/
 
 /*FIN DEL ENCABEZADO*/
 
