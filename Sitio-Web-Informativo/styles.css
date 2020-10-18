@@ -22,14 +22,20 @@ p::selection{
 }
 
 .contenedor header{
+    margin-top: 58px;
     background: linear-gradient(to right, black, blue, black);
 }
 
 .contenedor header #logo{
+    padding-top: 15px;
     width: 22%;
     height: 22%;
     display: block;
     margin: 0px auto;
+}
+
+.contenedor header #icono-cerrar{
+    display: none;
 }
 
 header #nombre_logo{
@@ -323,3 +329,271 @@ footer a:hover{
     transition: 0.3s;
 }
 
+/*MEDIA QUERY*/
+
+@media screen and (max-width: 400px){ 
+
+    header .menu #icono-cerrar{
+        display: block;
+        margin-left: 25px;
+        background-color: rgb(3, 3, 3));
+    }
+
+    header .menu #icono-cerrar img{
+        width: 40px;
+        height: 40px;
+        right: 5px;
+    }
+
+    header label img{
+        margin-left: 20px;
+    }
+
+    .contenedor header label{
+        width: 100%;
+    }
+
+    .contenedor header .menu ul{
+        width: 120%;
+    }
+
+    .contenedor header .menu ul li{
+        padding: 4px 0px;
+    }
+
+    .contenedor header .menu ul li:first-child{
+        padding-top: 30px;
+    }
+
+    .contenedor header #logo{
+        padding-top: 20px;
+        width: 30%;
+    }
+
+    h1{
+        margin: 0px auto;
+        font-size: 30px;
+    }
+
+    .main .btn-inicio{
+        width: 0px auto;
+    }
+
+    .main .perfil ul li img{
+        width: 30px;
+    }
+
+    .main .perfil ul{
+        padding-right: 18px;
+        margin-bottom: 15px;
+    }
+
+    .main .perfil ul li{
+        font-size: 11px;
+        
+    }
+
+    .main h2{
+        font-size: 23px;
+    }
+
+    p{
+        font-size: 13px;
+    }
+
+    .main .articulos{
+        margin: 0px auto;
+        width: auto;
+    }
+
+    .main .articulos img{
+        width: 80%;
+        margin: 0px auto;
+    }
+
+
+    footer{
+        padding-right: 2%;
+        margin: 0px auto;
+        border: none;
+    }
+
+    footer p{
+        font-size: 13px;
+    }
+
+    footer > img{
+        width: 60px;
+    }
+
+    .contenedor{
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width: 800px){
+
+    .main .articulos{
+        display: block;
+        margin: 15px 5%;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .widget{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px){
+
+    .contenedor header #icono-cerrar{
+        display: block;
+        position: absolute;
+        z-index: 1;
+        width: 40px;
+        height: 40px;
+        top: -13px;
+    }
+
+    .menu li:hover{
+        background-color: black;
+    }
+
+    .menu li:hover a{
+        color: white;
+    }
+
+    .menu .submenu li:hover a{
+        background-color: black;
+    }
+
+    .contenedor header .menu ul{
+        width: 120%;
+    }
+
+    .contenedor .menu{
+        background-color: black;
+        display: none;
+    }
+
+    .contenedor .menu .submenu{
+        background-color: black;
+        position: relative;
+        display: block;
+        margin-left: 30px;
+    }
+
+    .contenedor .menu .submenu a:first-child{
+        margin: 0px auto;
+        
+    }
+
+    .contenedor header {
+        padding-bottom: 15px;
+    }
+
+    .contenedor .main h2{
+        font-size: 27px;
+    }
+
+    /*MENU DESPLEGABLE con tamaño max-width: 900px*/
+
+    header label img{
+        position: absolute;
+        z-index: 1; /*Para mostrar el icono de menu al abrir el menu desplegable*/
+        width: 45px;
+        height: 45px;
+        margin-top: 15px;
+    }
+
+    header label{
+        width: 45px;
+        height: 45px;
+    }
+
+    header label{
+        position: absolute;
+        width: 88%;
+        height: 64px;
+        top: -5px;
+        background-color: rgb(0, 0, 0)
+    }
+
+    header label:hover{
+        cursor: pointer;
+    }
+
+    #btn-menu{
+        display: none;
+    }
+
+    .contenedor header .menu{
+        display: block;
+        position: absolute;
+        width: 87%;
+        margin-left: -140%;
+    }
+
+    .contenedor header .menu .submenu li{
+        border-bottom: 1px solid rgb(26, 26, 26);
+    }
+
+    .contenedor header .menu .submenu li:first-child{
+        padding: 0px;
+    }
+
+    .contenedor header .menu ul{
+        background-color: rgb(0, 0, 0);
+        flex-direction: column;
+    }
+
+    .contenedor header .menu ul li{
+        padding-top: 10px;
+    }
+
+    .contenedor header .menu ul li a{
+        text-align: left;
+        padding-left: 50px;
+    }
+
+    .contenedor header .menu ul li:first-child{
+        padding-top: 40px;
+    }
+
+    #btn-menu:checked ~ .menu{
+        transition: 0.3s;
+        margin: 0px;
+        top: 18px;
+    }
+
+    #btn-menu:checked ~ .menu #icono-cerrar{
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 900px){
+
+    .contenedor header{
+        margin: 0px;
+    }
+
+    header label img{
+        display: none;
+    }
+
+    #btn-menu{
+        display: none;
+    }
+}
+
+@media screen and (max-width:964px){
+
+    .redes-sociales img{
+        height: 21px;
+    }
+
+}
