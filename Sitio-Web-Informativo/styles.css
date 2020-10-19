@@ -1,6 +1,7 @@
 *{
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 body{
@@ -333,6 +334,10 @@ footer a:hover{
 
 @media screen and (max-width: 400px){
 
+    .menu li{
+        font-size: 13px;
+    }
+
     header .menu #icono-cerrar{
         display: block;
         margin-left: 25px;
@@ -353,7 +358,7 @@ footer a:hover{
     }
 
     .contenedor header .menu ul{
-        width: 120%;
+        width: 100%;
     }
 
     .contenedor header .menu ul li{
@@ -465,6 +470,10 @@ footer a:hover{
         background-color: black;
     }
 
+    .menu li:hover .submenu{
+        display: block;
+    }
+
     .menu li:hover a{
         color: white;
     }
@@ -485,8 +494,9 @@ footer a:hover{
     .contenedor .menu .submenu{
         background-color: black;
         position: relative;
-        display: block;
+        display: none;
         margin-left: 30px;
+        width: 90%;
     }
 
     .contenedor .menu .submenu a:first-child{
@@ -536,7 +546,8 @@ footer a:hover{
     .contenedor header .menu{
         display: block;
         position: absolute;
-        width: 87%;
+        width: 97%;
+        padding-right: 3%;
         margin-left: -140%;
     }
 
