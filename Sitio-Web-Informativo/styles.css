@@ -40,9 +40,8 @@ p::selection{
 }
 
 header #nombre_logo{
-    width: 300px;
-    display: block;
-    padding-left: 20px;
+    justify-content: center;
+    display: flex;
     margin: 0px auto;
     text-shadow: 2px 2px 2px rgb(138, 138, 138);
 }
