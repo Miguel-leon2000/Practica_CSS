@@ -25,10 +25,6 @@
     font-style: normal;
 }
 
-.gear{
-    font-family: "WebSymbolsRegular";
-}
-
 /*ESTILOS GENERALES*/
 
 *{
@@ -43,6 +39,10 @@ body{
 .wrap{
     width: 1200px;
     margin: 0px auto;
+}
+
+.gear, .icon{
+    font-family: "WebSymbolsRegular";
 }
 
 /*ESTILOS A LA CABECERA*/
@@ -133,4 +133,51 @@ body{
     padding-top: 23px;
     font-weight: normal;
     text-shadow: 2px 2px 1px black;
+}
+
+/*TARJETAS*/
+
+.card{
+    float: left;
+    width: 205px;
+    height: 305px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 2px #ddd;
+    background-color: white;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 16px;
+    margin-top: 40px;
+}
+
+.card:hover{
+    transition: all 300ms;
+    transform: scale(1.05, 1.05);
+}
+
+.card .icon{
+    display: block;
+    width: 100%;
+    height: 130px;
+    font-size: 50px;
+    line-height: 130px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.card .category{
+    width: 100%;
+    height: 50px;
+    font-family: "TrebuchetMs";
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    color: #00538c;
+}
+
+.card .description{
+    font-family: "TrebuchetMs";
+    text-align: center;
+    color: #026aaf;
+    font-size: 15px;
 }
