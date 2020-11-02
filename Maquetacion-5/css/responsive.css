@@ -1,0 +1,12 @@
+@media (max-width: 1250px){
+    .wrap{
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    .card{
+        width: 16%;
+        margin: 1.89%;
+    }
+}
+
