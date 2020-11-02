@@ -607,7 +607,7 @@ aside h3{
 
 #articles #blog a{
     display: block;
-    padding: 5px;
+    line-height: 35px;
     font-family: "BebasNeue";
     text-decoration: none;
     color: white;
@@ -616,8 +616,30 @@ aside h3{
 }
 
 #articles #blog:hover{
-    box-shadow: 1px 1px 4px gray;
+    transition: all 600ms;
+    box-shadow: 1px 1px 2px gray;
     background-color: rgb(58, 58, 58);
+    border: 5px solid #37bcf9 inset;
+
+    animation: blink 10s infinite linear;
+}
+
+@keyframes blink{
+    0%{
+        border: 5px solid #37bcf9;
+    }
+    25%{
+        border: 5px solid green;
+    }
+    50%{
+        border: 5px solid yellow;
+    }
+    75%{
+        border: 5px solid rgb(173, 27, 27);
+    }
+    100%{
+        border: 5px solid #37bcf9;
+    }
 }
 
 /*FOOTER*/
@@ -653,7 +675,7 @@ footer h5{
     letter-spacing: 2px;
     text-align: center;
     font-family: "BebasNeue";
-    font-size: 40px;
+    font-size: 35px;
     line-height: 55px;
     color: black;
     border-radius: 5px;
@@ -670,6 +692,12 @@ footer ul li{
     margin-top: 10px;
     padding: 5px;
     border-bottom: 1px solid #ccc;
+}
+
+footer ul li:hover a{
+    width: 100%;
+    padding-left: 40px;
+    color: white;
 }
 
 footer ul li a{
@@ -692,3 +720,4 @@ footer img{
 footer #browsers img{
     width: 45px;
 }
+
