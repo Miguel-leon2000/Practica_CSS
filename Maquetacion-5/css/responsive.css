@@ -8,5 +8,19 @@
         width: 16%;
         margin: 1.89%;
     }
+
+    #articles {
+        width: 68%;
+    }
+
+    footer .wrap > div{
+        width: 24%;
+        margin: 4%;
+    }
+
+    footer #browsers img {
+        width: 15%;
+    }
+
 }
 
