@@ -391,6 +391,11 @@
 }
 
 @media (max-width: 500px){
+
+    #logo .gear{
+        margin-left: 20px;
+    }
+
     #banner h1{
         font-size: 30px;
     }
