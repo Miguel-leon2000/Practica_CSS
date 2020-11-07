@@ -448,7 +448,7 @@
 
 @media (max-width: 420px){
     .card .category{
-        font-size: 12px;
+        font-size: 10px;
     }
 
     #login #user {
@@ -460,7 +460,7 @@
     }
 
     .card .icon{
-        font-size: 34px;
+        font-size: 30px;
     }
 
 }
