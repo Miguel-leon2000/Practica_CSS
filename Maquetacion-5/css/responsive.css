@@ -482,6 +482,10 @@
         margin-left: 2.1%;
     }
 
+    .card .category{
+        font-size: 9px;
+    }
+
 }
 
 @media (max-width: 385px){
