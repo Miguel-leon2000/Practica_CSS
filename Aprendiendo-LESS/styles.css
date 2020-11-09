@@ -5,3 +5,11 @@ h1 {
   font-family: Arial;
   font-size: 15px;
 }
+.informacion ul a {
+  color: red;
+  font-size: 18px;
+}
+.informacion {
+  box-shadow: 0px 0px 5px black;
+  text-shadow: 0px 0px 5px black;
+}
