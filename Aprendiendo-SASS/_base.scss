@@ -134,8 +134,13 @@ h1{
 }
 
 // FOR
+$contador: 1;
 
-// EACH
+@for $contador from 1 to 10 {
 
-// WHILE
+    .listado ul li:nth-child(#{$contador}){
+        font-size: $contador * 5px;
+    }
+}
+
 
