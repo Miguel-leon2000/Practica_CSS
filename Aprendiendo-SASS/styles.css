@@ -37,6 +37,19 @@ p {
   color: orange;
 }
 
+/*Mixins / Funciones*/
+.caja {
+  border: 10px solid red;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px black;
+}
+
+.listado {
+  border: 5px solid green;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px yellow;
+}
+
 /*ESTE ARCHIVO ES UN MODULO*/
 h1 {
   text-decoration: underline;
