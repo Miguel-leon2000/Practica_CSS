@@ -115,3 +115,27 @@ $wrap: 900px;
     margin: 10px;
 }
 
+/*Estructuras de control*/
+
+// CONDICIONALES - if 
+
+h1{
+    @if $color-fondo == #ccc {
+        color: black; /*Se cumple porque el color-fondo si es #ccc y coloca el color de la letra en negro*/
+    }
+    
+    @else if $color-fondo == black{
+        color: green;
+    }
+    
+    @else {
+        color: orange;
+    }
+}
+
+// FOR
+
+// EACH
+
+// WHILE
+

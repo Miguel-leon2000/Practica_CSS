@@ -89,6 +89,12 @@ h1 {
   margin: 10px;
 }
 
+/*Estructuras de control*/
+h1 {
+  color: black;
+  /*Se cumple porque el color-fondo si es #ccc y coloca el color de la letra en negro*/
+}
+
 /*ESTE ARCHIVO ES UN MODULO*/
 h1 {
   text-decoration: underline;
