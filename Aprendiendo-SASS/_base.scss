@@ -90,3 +90,28 @@ p{
     border-color: green;
 }
 
+//OPERADORES
+
+h1{
+    font-size: 20px + 5px - 1px;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+$caja: 200px;
+$wrap: 900px;
+
+.cajas{
+    width: 900px;
+    margin: 0px auto;
+}
+
+.caja{
+    float: left;
+    width: $caja / $wrap * 100%;
+    margin: 10px;
+}
+
