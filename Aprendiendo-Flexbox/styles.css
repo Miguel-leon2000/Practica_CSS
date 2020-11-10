@@ -14,6 +14,9 @@ body{
     flex-flow: row wrap; /*Unir flex-direction y flex-wrap en una sola linea de codigo*/
     justify-content: space-around; /*Alinear las cajas, con flex-end o right manda todos los elementos la derecha o center. space-around para separar cajas */
 
+    height: 600px;
+    align-items: center; /*baseline(Ajusta la altura de la cajas independientemente y no al layout), center(Centra las cajas por todos lados), flex-end(para colocar las cajas abajo)*/
+
     border: 3px solid black;
     padding: 5px;
 }
@@ -30,18 +33,22 @@ body{
 }
 
 .red{
+    align-self: flex-start; /*Colocar la caja arriba de manera independiente*/
     background-color: var(--rojo); /*Toma el valor de una variable*/
 }
 
 .green{
+    margin-bottom: 15%; /*Pequeño ejercicio para colocar las cajas en forma de escalera*/
     background-color: green;
 }
 
 .blue{
+    margin-top: 15%;
     background-color: blue;
 }
 
 .orange{
+    align-self: flex-end; /*Colocar la caja arriba de manera independiente*/
     background-color: orange;
 }
 
