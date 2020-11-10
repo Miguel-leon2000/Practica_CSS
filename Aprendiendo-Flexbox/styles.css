@@ -1,6 +1,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    background-color: gray;
 }
 
 #layout{
@@ -16,6 +17,8 @@ body{
 }
 
 .caja{
+    flex-grow: 1; /*Para que cada caja ocupe el mismo espacio*/
+
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -27,22 +30,19 @@ body{
 }
 
 .red{
-    order: 4;
+    flex-grow: 2; /*Ocupe un poco mas de tamaño de la caja*/
     background-color: red;
 }
 
 .green{
-    order: 1;
     background-color: green;
 }
 
 .blue{
-    order: 2; /*Colocar esta caja al principio (si no se pone "-" se pasará al final)*/
     background-color: blue;
 }
 
 .orange{
-    order: 3;
     background-color: orange;
 }
 
