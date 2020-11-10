@@ -27,18 +27,22 @@ body{
 }
 
 .red{
+    order: 4;
     background-color: red;
 }
 
 .green{
+    order: 1;
     background-color: green;
 }
 
 .blue{
+    order: 2; /*Colocar esta caja al principio (si no se pone "-" se pasará al final)*/
     background-color: blue;
 }
 
 .orange{
+    order: 3;
     background-color: orange;
 }
 
