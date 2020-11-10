@@ -4,8 +4,12 @@ body{
 }
 
 #layout{
-    display: inline-flex; /*inline-flex para posicionarlo en medio, flex para que ocupe el ancho de la pantalla 100%*/
-    flex-direction: column; /*Puede ser row=fila, column=columna, row-reverse (o column)=primer elemento a la derecha a izquierda */
+    display: flex; /*inline-flex para posicionarlo en medio, flex para que ocupe el ancho de la pantalla 100%*/
+    
+    flex-direction: row; /*Puede ser row=fila, column=columna, row-reverse (o column)=primer elemento a la derecha a izquierda */
+    flex-wrap: wrap; /*Para que las cajas no salgan de la pantalla y se ordenen hacia abajo*/
+
+    /*flex-flow: row wrap; /*Unir flex-direction y flex-wrap en una sola linea de codigo*/
 
     border: 3px solid black;
     padding: 5px;
