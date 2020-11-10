@@ -8,20 +8,17 @@ body{
 #layout{
     display: flex; /*inline-flex para posicionarlo en medio, flex para que ocupe el ancho de la pantalla 100%*/
     
-    flex-direction: row; /*Puede ser row=fila, column=columna, row-reverse (o column)=primer elemento a la derecha a izquierda */
-    flex-wrap: wrap; /*Para que las cajas no salgan de la pantalla y se ordenen hacia abajo*/
+    /*flex-direction: row; /*Puede ser row=fila, column=columna, row-reverse (o column)=primer elemento a la derecha a izquierda */
+    /*flex-wrap: wrap; /*Para que las cajas no salgan de la pantalla y se ordenen hacia abajo*/
 
-    /*flex-flow: row wrap; /*Unir flex-direction y flex-wrap en una sola linea de codigo*/
+    flex-flow: row wrap; /*Unir flex-direction y flex-wrap en una sola linea de codigo*/
+    justify-content: space-around; /*Alinear las cajas, con flex-end o right manda todos los elementos la derecha o center. space-around para separar cajas */
 
     border: 3px solid black;
     padding: 5px;
 }
 
 .caja{
-    flex-grow: 1;
-    flex-basis: calc((100% / 3) - 68px); /*Darle un tamaño minimo a las cajas, funciona como un width*/
-
-    width: 25%;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -45,8 +42,6 @@ body{
 }
 
 .orange{
-    flex-basis: 100%; /*Darle a la caja el 100% para que ocupe el espacio de toda la pantalla*/
-
     background-color: orange;
 }
 
