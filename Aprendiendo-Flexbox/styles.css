@@ -39,6 +39,8 @@ body{
 }
 
 .blue{
+    flex-grow: 0;
+    flex-shrink: 4; /*Reducir tamaño de la caja*/
     background-color: blue;
 }
 
