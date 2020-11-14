@@ -69,4 +69,46 @@ header #menu ul a:hover {
   color: white;
 }
 
+#content {
+  display: flex;
+  /*Colocar el aside a la izquierda y los proyectos a la derecha*/
+  justify-content: space-between;
+  /*Espacio entre las dos cajas (coloca cada caja en las dos esquinas)*/
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#content #projects {
+  display: flex;
+  /*Colocar todos los proyectos en forma de linea horizontal*/
+  flex-flow: row wrap;
+  /*Colocar todos los proyectos dentro de la caja y no se salgan*/
+  justify-content: space-between;
+  /*Separa todo los proyectos, sin tener que colocar un margin a cada uno*/
+  flex-basis: 80%;
+}
+#content #projects .project {
+  flex-grow: 1;
+  flex-basis: 250px;
+  margin-bottom: 25px;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+}
+#content #projects .project img {
+  width: 100%;
+}
+#content #projects .project-info {
+  padding: 10px;
+}
+#content #projects .project-info a {
+  font-size: 16px;
+  color: black;
+  transition: all 300ms;
+}
+#content #projects .project-info a:hover {
+  color: green;
+}
+#content #projects .project-info p {
+  color: gray;
+}
+
 /*# sourceMappingURL=styles.css.map */
