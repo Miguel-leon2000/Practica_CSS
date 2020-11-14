@@ -1,0 +1,113 @@
+body {
+  background-color: #7cc4ff;
+}
+
+.clearfix {
+  float: none;
+  clear: both;
+}
+
+.layout {
+  background-color: white;
+  display: flex;
+  width: 95%;
+  border: 1px solid gray;
+  box-shadow: 0px 0px 8px gray;
+  flex-wrap: wrap;
+  margin: 0px auto;
+  margin-top: 30px;
+  font-family: Arial;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+}
+.layout .encabezado {
+  display: inline-flex;
+}
+.layout .encabezado h1 {
+  margin: 0px;
+  padding: 20px;
+  letter-spacing: 1px;
+}
+.layout .encabezado .menu {
+  display: flex;
+  justify-content: flex-end;
+}
+.layout .encabezado .menu ul {
+  display: inline-flex;
+  list-style: none;
+  color: gray;
+  font-size: 19px;
+}
+.layout .encabezado .menu ul li {
+  margin: 10px;
+}
+.layout .encabezado .menu ul li a {
+  text-decoration: none;
+  color: gray;
+  font-weight: bold;
+}
+.layout .encabezado .menu ul li a:hover {
+  color: red;
+}
+.layout .lateral h2 {
+  border: 1px solid #ccc;
+  box-shadow: 0px 2px 7px #ccc;
+  padding: 10px;
+  font-size: 20px;
+}
+.layout .lateral nav li {
+  margin: 0px auto;
+  width: 120px;
+  overflow: hidden;
+  text-align: center;
+  list-style: none;
+  border: 1px solid green;
+  box-shadow: 0px 2px none green;
+  padding: 10px;
+  font-size: 17px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.layout .lateral nav li:hover {
+  background-color: #a7cffd;
+  cursor: pointer;
+  transform: scale(1.05, 1.05);
+  border-color: red;
+}
+.layout .section {
+  display: inline-flex;
+  /*Se coloquen como una lista hacia abajo*/
+  flex-flow: wrap;
+  /*Para que no salgan las cajas de la pantalla*/
+  justify-content: flex-end;
+}
+.layout .section .caja:hover {
+  transform: scale(1.02, 1.02);
+  border-color: green;
+  cursor: pointer;
+}
+.layout .section .caja {
+  margin: 10px 15px;
+  border: 1px solid #ccc;
+  width: 300px;
+  height: 200px;
+  box-shadow: 0px 3px 8px gray;
+  transition: all 200ms;
+}
+.layout .section .caja img {
+  width: 100%;
+  height: 150px;
+}
+.layout .section .caja .description {
+  float: left;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.layout .section .caja .site {
+  clear: both;
+  float: left;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+/*# sourceMappingURL=styles.css.map */

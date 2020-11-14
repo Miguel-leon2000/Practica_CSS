@@ -1,0 +1,132 @@
+$fuente-tipica: Arial;
+
+body{
+    background-color: rgb(124, 196, 255);
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+.layout{
+    background-color: white;
+    display: flex;
+    width: 95%;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 8px gray;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    margin-top: 30px;
+    font-family: $fuente-tipica;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+
+    .encabezado{
+        display: inline-flex;
+        
+        h1{
+            margin: 0px;
+            padding: 20px;
+            letter-spacing: 1px;
+        }
+
+        .menu{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .menu ul{
+            display: inline-flex;
+            list-style: none;
+            color: gray;
+            font-size: 19px;
+        }
+
+        .menu ul li{
+            margin: 10px;
+        }
+
+        .menu ul li a{
+            text-decoration: none;
+            color: gray;
+            font-weight: bold;
+        }
+
+        .menu ul li a:hover{
+            color: red;
+        }
+    }
+
+    .lateral{
+
+        @mixin CrearContenedor($font-size ,$size, $color, $shadow) {
+            border: $size solid $color;
+            box-shadow: 0px 2px $shadow $color;
+            padding: 10px;
+            font-size: $font-size;
+        }
+
+        h2{
+            @include CrearContenedor(20px, 1px, #ccc, 7px);
+        }
+
+        nav li{
+            margin: 0px auto;
+            width: 120px;
+            overflow: hidden;
+            text-align: center;
+            list-style: none;
+            @include CrearContenedor(17px, 1px, green, none);
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        nav li:hover{
+            background-color: rgb(167, 207, 253);
+            cursor: pointer;
+            transform: scale(1.050, 1.050);
+            border-color: red;
+        }
+    }
+
+    .section{
+        display: inline-flex; /*Se coloquen como una lista hacia abajo*/
+        flex-flow: wrap; /*Para que no salgan las cajas de la pantalla*/
+        justify-content: flex-end;
+
+        .caja:hover{
+            transform: scale(1.020, 1.020);
+            border-color: green;
+            cursor: pointer;
+        }
+
+        .caja{
+            margin: 10px 15px;
+            border: 1px solid #ccc;
+            width: 300px;
+            height: 200px;
+            box-shadow: 0px 3px 8px gray;
+            transition: all 200ms;      
+    
+            img{
+                width: 100%;
+                height: 150px;
+            }
+
+            .description{
+                float: left;
+                font-weight: bold;
+                padding-left: 10px;
+            }
+
+            .site{
+                clear: both;
+                float: left;
+                padding-left: 10px;
+                padding-top: 5px;
+            }
+        }
+    }
+
+}
