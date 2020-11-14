@@ -1,0 +1,45 @@
+@charset "UTF-8";
+* {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+#container {
+  width: 90%;
+  height: auto;
+  margin: 0px auto;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px #ccc;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  min-height: 570px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  /*Para colocarlo como una fila las dos cajas*/
+  flex-wrap: wrap;
+  /*Para que no salgan los elementos del header*/
+  align-items: center;
+  /*Alinear todos los elementos al centro en una fila*/
+  height: 120px;
+  border-bottom: 1px solid #ccc;
+}
+header .logo {
+  flex-basis: 65%;
+  /*Darle un tamaño a la caja que contiene el logo para que haya una separación*/
+  margin-left: 20px;
+  text-shadow: 1px 1px 0px #ccc;
+}
+header .logo h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  /*Poner el logo en cursivas*/
+  font-size: 35px;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */
