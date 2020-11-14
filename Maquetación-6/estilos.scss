@@ -26,6 +26,7 @@ header{
     border-bottom: 1px solid #ccc;
 
     .logo{
+        flex-grow: 1; /*Para adaptarlo a la pantalla*/
         flex-basis: 65%; /*Darle un tamaño a la caja que contiene el logo para que haya una separación*/
         
         margin-left: 20px;
@@ -38,4 +39,34 @@ header{
             padding: 10px;
         }
     }
+
+    #menu{
+        flex-grow: 1;
+        flex-basis: 30%; 
+        height: 100%;
+        padding-right: 20px;
+
+        ul{
+            display: flex; /*Para poner los elementos en fila*/
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+            list-style: none;
+
+            a{
+                color: #444;
+                padding: 10px;
+                transition: all 300ms;
+            }
+
+            a:hover{
+                background: #ccc;
+                color: white;
+            }
+        }
+    }
+
+
 }
