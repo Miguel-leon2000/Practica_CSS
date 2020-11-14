@@ -31,7 +31,7 @@ header {
 header .logo {
   flex-grow: 1;
   /*Para adaptarlo a la pantalla*/
-  flex-basis: 50%;
+  flex-basis: 49%;
   /*Darle un tamaño a la caja que contiene el logo para que haya una separación*/
   margin-left: 20px;
   text-shadow: 1px 1px 0px #ccc;
@@ -45,7 +45,7 @@ header .logo h1 {
 }
 header #menu {
   flex-grow: 1;
-  flex-basis: 45%;
+  flex-basis: 46%;
   height: 100%;
   padding-right: 20px;
 }
@@ -187,6 +187,62 @@ footer .info {
   flex-grow: 1;
   color: #444;
   margin-left: 20px;
+}
+
+@media (max-width: 893px) {
+  header {
+    margin-top: 20px;
+    text-align: center;
+  }
+  header #menu ul {
+    margin-top: 20px;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    /*Para que el tamaño de los menús se reduzca*/
+  }
+}
+@media (max-width: 781px) {
+  #content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  aside {
+    margin: 0px;
+  }
+  aside ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+  aside li {
+    flex-grow: 1;
+    /*Se vea completo el background del menu*/
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .project {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  footer .logo {
+    order: 1;
+    text-align: center;
+    flex-basis: 100%;
+    flex-grow: 1;
+  }
+  footer .info {
+    order: 2;
+    text-align: center;
+    flex-basis: 100%;
+    flex-grow: 1;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
