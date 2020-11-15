@@ -90,6 +90,13 @@ header{
             border: 1px solid #ccc;
         }
 
+        .project:hover{
+            cursor: pointer;
+            box-shadow: 0px 0px 10px gray;
+            transform: scale(1.005,1.005);
+            border-color: blue;
+        }
+
         .project img{
             width: 100%;
         }
