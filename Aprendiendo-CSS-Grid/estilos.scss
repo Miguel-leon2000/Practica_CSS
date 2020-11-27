@@ -5,7 +5,7 @@ body{
 
 .layout{
     width: 1200px;
-    min-height: 300px;
+    height: 500px;
     margin: 0px auto;
 
     display: grid; /*Definir el grid layout*/
@@ -52,5 +52,14 @@ body{
         grid-column: 1 / 5; /*Forma mas facil de definir la expansion de la columna*/
 
         background-color: orange;
+    }
+
+    .black{
+        grid-column: 4 / 5;
+        grid-row: 2 / 6;
+    }
+
+    .violet{
+        grid-column: 1 / 4;
     }
 }
