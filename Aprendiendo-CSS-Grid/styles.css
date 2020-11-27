@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.layout {
+  border: 3px solid orangered;
+}
+.layout .caja {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  padding: 20px;
+  border: 4px solid #222;
+  margin: 10px;
+  background-color: gray;
+}
+.layout .red {
+  background-color: red;
+}
+.layout .blue {
+  background-color: blue;
+}
+.layout .green {
+  background-color: green;
+}
+.layout .orange {
+  background-color: orange;
+}
+
+/*# sourceMappingURL=styles.css.map */
