@@ -10,6 +10,8 @@ body {
   /*Definir el grid layout*/
   grid-template-columns: 50% 20% 20% 7.5%;
   /*Cantidad de columnas separados con %*/
+  /*grid-template-columns: repeat(4, calc(25% - 8px)); /*Para que los porcentajes no sean repetitivos (columnas, espacio en %)*/
+  /*grid-template-columns: 1fr 1fr 1fr; o repeat(3, 1fr) /*Otra forma de organizar con fracciones (se establece tres columnas)*/
   grid-gap: 10px;
   /*Espacio entre elementos grid*/
   border: 3px solid orangered;
