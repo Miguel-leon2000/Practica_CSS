@@ -5,7 +5,7 @@ body {
 
 .layout {
   width: 1200px;
-  height: 300px;
+  min-height: 300px;
   margin: 0px auto;
   display: grid;
   /*Definir el grid layout*/
@@ -29,6 +29,9 @@ body {
   background-color: gray;
 }
 .layout .red {
+  /*Expandir columnas, a partir de la primera linea hasta la linea 4*/
+  grid-column-start: 1;
+  grid-column-end: 4;
   background-color: red;
 }
 .layout .blue {
@@ -38,6 +41,12 @@ body {
   background-color: green;
 }
 .layout .orange {
+  /*Expandir columnas, a partir de la primera linea hasta la linea 4*/
+  /*grid-column-start: 1;
+  grid-column-end: 5;
+  */
+  grid-column: 1/5;
+  /*Forma mas facil de definir la expansion de la columna*/
   background-color: orange;
 }
 
