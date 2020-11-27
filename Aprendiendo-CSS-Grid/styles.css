@@ -5,56 +5,56 @@ body {
 
 .layout {
   width: 1200px;
-  height: 500px;
+  height: 700px;
   margin: 0px auto;
   display: grid;
   /*Definir el grid layout*/
   grid-gap: 10px;
   /*Espacio entre elementos grid*/
   /*grid-template-columns: 50% 20% 20% 7.5%; /*Cantidad de columnas separados con %*/
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 3fr 1fr;
   /*Para que los porcentajes no sean repetitivos (columnas, espacio en %)*/
   /*grid-template-columns: 1fr 1fr 1fr; o repeat(3, 1fr) /*Otra forma de organizar con fracciones (se establece tres columnas)*/
-  grid-template-rows: 2fr 1fr 1fr;
+  grid-template-rows: repeat(7, 1fr);
   /*Cantidad de filas separados con fracciones (fr)*/
   border: 3px solid red;
   padding: 10px;
 }
-.layout .caja {
+.layout .box {
   font-size: 20px;
   font-weight: bold;
-  color: white;
+  color: black;
   padding: 20px;
   border: 4px solid #222;
-  background-color: gray;
 }
-.layout .red {
+.layout .title {
   /*Expandir columnas, a partir de la primera linea hasta la linea 4*/
   grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column-end: 3;
   background-color: red;
 }
-.layout .blue {
-  background-color: blue;
+.layout .subtitle {
+  background-color: #5858ff;
 }
-.layout .green {
+.layout .widget {
+  grid-column: 2/3;
+  grid-row: 2/7;
   background-color: green;
 }
-.layout .orange {
+.layout .section {
   /*Expandir columnas, a partir de la primera linea hasta la linea 4*/
   /*grid-column-start: 1;
   grid-column-end: 5;
   */
-  grid-column: 1/5;
-  /*Forma mas facil de definir la expansion de la columna*/
+  /*grid-column: 1 / 5; /*Forma mas facil de definir la expansion de la columna*/
   background-color: orange;
 }
-.layout .black {
-  grid-column: 4/5;
-  grid-row: 2/6;
+.layout footer {
+  background-color: black;
+  grid-column: 1/3;
 }
-.layout .violet {
-  grid-column: 1/4;
+.layout footer p {
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
