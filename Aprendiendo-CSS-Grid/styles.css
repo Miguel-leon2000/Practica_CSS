@@ -4,7 +4,16 @@ body {
 }
 
 .layout {
+  width: 1200px;
+  margin: 0px auto;
+  display: grid;
+  /*Definir el grid layout*/
+  grid-template-columns: 50% 20% 20% 7.5%;
+  /*Cantidad de columnas separados con %*/
+  grid-gap: 10px;
+  /*Espacio entre elementos grid*/
   border: 3px solid orangered;
+  padding: 10px;
 }
 .layout .caja {
   font-size: 20px;
@@ -12,7 +21,6 @@ body {
   color: white;
   padding: 20px;
   border: 4px solid #222;
-  margin: 10px;
   background-color: gray;
 }
 .layout .red {
