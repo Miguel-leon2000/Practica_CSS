@@ -15,7 +15,7 @@ body{
     /*grid-template-columns: 1fr 1fr 1fr; o repeat(3, 1fr) /*Otra forma de organizar con fracciones (se establece tres columnas)*/
     grid-template-rows: 2fr 1fr 1fr; /*Cantidad de filas separados con fracciones (fr)*/
 
-    border: 3px solid orangered;
+    border: 3px solid rgb(255, 0, 0);
     padding: 10px;
 
     .caja{
