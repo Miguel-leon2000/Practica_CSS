@@ -6,19 +6,24 @@ body {
 
 /*-----------------EJERCICIO COMPLETO---------------------*/
 #website {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 150px 70px 1fr 70px;
   width: 75%;
-  height: 100vh;
-  /*Altura del navegador*/
+  height: 1000px;
+  /*Altura del navegador 100vh*/
   margin: 0px auto;
   border: 1px solid #ccc;
 }
 
 #cabecera {
+  grid-column: 1/6;
   background: blue;
   color: white;
 }
 
 #menu {
+  grid-column: 1/6;
   background: lightblue;
   color: black;
 }
@@ -31,6 +36,7 @@ body {
 }
 
 #contenido {
+  grid-column: 1/5;
   background: #eee;
 }
 #contenido article {
@@ -39,11 +45,13 @@ body {
 }
 
 #lateral {
+  grid-column: 5/6;
   background: orange;
   color: white;
 }
 
 footer {
+  grid-column: 1/6;
   background: black;
   color: white;
 }
