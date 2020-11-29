@@ -16,6 +16,7 @@ body{
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 150px 70px 1fr 70px;
 
+
     width: 75%;
     height: 1000px; /*Altura del navegador 100vh*/
     margin: 0px auto;
@@ -23,6 +24,10 @@ body{
 }
 
 #cabecera{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     grid-column: 1 / 6;
 
     background: blue;

@@ -22,6 +22,9 @@ body {
 }
 
 #cabecera {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-column: 1/6;
   background: blue;
   color: white;
