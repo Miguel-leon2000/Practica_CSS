@@ -18,6 +18,14 @@ body{
     "footer footer footer footer footer"
     ;
 
+    grid-gap: 10px; /*Separar todos los elementos dentro del website2 con Grid*/
+
+    /*
+        --Puede hacerse la separacion especificando las columnas o filas
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+    */
+
     width: 75%;
     height: 1000px; /*Altura del navegador 100vh*/
     margin: 0px auto;

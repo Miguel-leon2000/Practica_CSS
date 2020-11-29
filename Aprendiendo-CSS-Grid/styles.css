@@ -10,6 +10,13 @@ body {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 150px 70px 1fr 70px;
   grid-template-areas: "cabecera cabecera cabecera cabecera cabecera" "menu menu menu menu menu" "lateral contenido contenido contenido contenido " "footer footer footer footer footer";
+  grid-gap: 10px;
+  /*Separar todos los elementos dentro del website2 con Grid*/
+  /*
+      --Puede hacerse la separacion especificando las columnas o filas
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  */
   width: 75%;
   height: 1000px;
   /*Altura del navegador 100vh*/
