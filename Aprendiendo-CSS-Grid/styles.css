@@ -1,8 +1,54 @@
 body {
+  background-color: gray;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
 
+/*-----------------EJERCICIO COMPLETO---------------------*/
+#website {
+  width: 75%;
+  height: 100vh;
+  /*Altura del navegador*/
+  margin: 0px auto;
+  border: 1px solid #ccc;
+}
+
+#cabecera {
+  background: blue;
+  color: white;
+}
+
+#menu {
+  background: lightblue;
+  color: black;
+}
+#menu ul li {
+  list-style: none;
+}
+#menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+#contenido {
+  background: #eee;
+}
+#contenido article {
+  background: #ccc;
+  border: 1px solid #555;
+}
+
+#lateral {
+  background: orange;
+  color: white;
+}
+
+footer {
+  background: black;
+  color: white;
+}
+
+/*-----------------EJEMPLOS-------------------------------*/
 .layout {
   width: 80%;
   height: 700px;
