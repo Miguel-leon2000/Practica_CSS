@@ -5,6 +5,68 @@ body {
 }
 
 /*-----------------EJERCICIO COMPLETO---------------------*/
+#website2 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 150px 70px 1fr 70px;
+  grid-template-areas: "cabecera cabecera cabecera cabecera cabecera" "menu menu menu menu menu" "lateral contenido contenido contenido contenido " "footer footer footer footer footer";
+  width: 75%;
+  height: 1000px;
+  /*Altura del navegador 100vh*/
+  margin: 0px auto;
+  border: 1px solid #ccc;
+}
+#website2 #cabecera {
+  grid-area: cabecera;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: blue;
+  color: white;
+}
+#website2 #menu {
+  grid-area: menu;
+  background: lightblue;
+  color: black;
+  line-height: 70px;
+}
+#website2 #menu ul {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  list-style: none;
+}
+#website2 #menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+#website2 #contenido {
+  grid-area: contenido;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+  padding: 20px;
+  background: #eee;
+}
+#website2 #contenido article {
+  background: #ccc;
+  border: 1px solid #555;
+}
+#website2 #lateral {
+  grid-area: lateral;
+  background: orange;
+  color: white;
+}
+#website2 footer {
+  grid-area: footer;
+  background: black;
+  color: white;
+}
+
+#website2 * {
+  margin: 0px;
+  padding: 0px;
+}
+
 #website * {
   margin: 0px;
   padding: 0px;
@@ -20,8 +82,7 @@ body {
   margin: 0px auto;
   border: 1px solid #ccc;
 }
-
-#cabecera {
+#website #cabecera {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,23 +90,22 @@ body {
   background: blue;
   color: white;
 }
-
-#menu {
+#website #menu {
   grid-column: 1/6;
   background: lightblue;
   color: black;
+  line-height: 70px;
 }
-#menu ul {
+#website #menu ul {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   list-style: none;
 }
-#menu ul li a {
+#website #menu ul li a {
   text-decoration: none;
   color: black;
 }
-
-#contenido {
+#website #contenido {
   grid-column: 1/5;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -53,18 +113,16 @@ body {
   padding: 20px;
   background: #eee;
 }
-#contenido article {
+#website #contenido article {
   background: #ccc;
   border: 1px solid #555;
 }
-
-#lateral {
+#website #lateral {
   grid-column: 5/6;
   background: orange;
   color: white;
 }
-
-footer {
+#website footer {
   grid-column: 1/6;
   background: black;
   color: white;
