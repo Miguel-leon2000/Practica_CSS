@@ -6,6 +6,11 @@ body{
 
 /*-----------------EJERCICIO COMPLETO---------------------*/
 
+#website *{
+    margin: 0px;
+    padding: 0px;
+}
+
 #website{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -31,9 +36,12 @@ body{
     color: black;
 
     ul{
-        li{
-            list-style: none;
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        list-style: none;
 
+        li{
+    
             a{
                 text-decoration: none;
                 color: black;
@@ -44,6 +52,11 @@ body{
 
 #contenido{
     grid-column: 1 / 5;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    padding: 20px;
 
     background: #eee;
 
