@@ -16,3 +16,11 @@
 .item{
     height: 150px;
 }
+
+footer{
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
