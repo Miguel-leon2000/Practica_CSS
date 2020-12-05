@@ -24,3 +24,13 @@ footer{
     font-weight: bold;
     text-align: center;
 }
+
+.lateral{
+    height: 550px;
+    background-color: wheat;
+}
+
+.lateral > div{
+    height: 50px;
+}
+
