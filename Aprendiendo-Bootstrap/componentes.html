@@ -191,6 +191,29 @@
                     </div>
                 </div>
 
+                <!--Barra de progreso-->
+                <div class="progress mt-3">
+                    <div id="barra-progreso" class="progress-bar bg-success w-0" role="progressbar">
+                        0%
+                    </div>
+                </div>
+
+                <script>
+
+                    var contador = 0;
+
+                    setInterval(function(){
+                        if(contador < 100){
+                            contador++;
+                            var barra = document.querySelector("#barra-progreso");
+                            barra.style.width = contador + "%";
+                            barra.innerHTML = contador + "%";
+                        }
+
+                    }, 1000);
+
+                </script>
+
             </div>
 
         </div>
