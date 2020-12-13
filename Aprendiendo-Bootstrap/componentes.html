@@ -58,7 +58,7 @@
 
         <div class="row">
             <div class="col-md-8 mt-3">
-                
+
                 <!--Migas de pan-->
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -87,19 +87,25 @@
                     <div class="carousel-inner ">
 
                         <div class="carousel-item active h-4">
-                            <img class="d-block w-100" src="https://revistalogisticaparaguay.com/wp-content/uploads/2019/02/E-commerce-700x325.jpg" alt="image" />
+                            <img class="d-block w-100"
+                                src="https://revistalogisticaparaguay.com/wp-content/uploads/2019/02/E-commerce-700x325.jpg"
+                                alt="image" />
                             <div class="carousel-caption d-none d-md-block text-dark">
                                 <h5>E-commerce</h5>
                                 <p>Aprende como vender en linea</p>
-                              </div>
+                            </div>
                         </div>
 
                         <div class="carousel-item ">
-                            <img class="d-block w-100" src="https://lh3.googleusercontent.com/proxy/gzWxPm7a_8foZ8CCIdb2mWHJA8lqaSNXgrK8PWH6OMTvMfpZtFrNCkQ7G3rnyouLGi4rzgT-rcG_UcmSVtTpbPWtujY5WTHrsvrJ0OWzMJsbxMxJRQjUQ-qV3iIE0XCgU_ECGNBg" alt="image" />
+                            <img class="d-block w-100"
+                                src="https://lh3.googleusercontent.com/proxy/gzWxPm7a_8foZ8CCIdb2mWHJA8lqaSNXgrK8PWH6OMTvMfpZtFrNCkQ7G3rnyouLGi4rzgT-rcG_UcmSVtTpbPWtujY5WTHrsvrJ0OWzMJsbxMxJRQjUQ-qV3iIE0XCgU_ECGNBg"
+                                alt="image" />
                         </div>
 
                         <div class="carousel-item ">
-                            <img class="d-block w-100" src="https://www.freshcommerce.es/wp-content/uploads/2016/12/ecommerce-tendencias.jpg" alt="image" />
+                            <img class="d-block w-100"
+                                src="https://www.freshcommerce.es/wp-content/uploads/2016/12/ecommerce-tendencias.jpg"
+                                alt="image" />
                         </div>
 
                     </div>
@@ -118,7 +124,8 @@
 
                 <!--FIN DEL SLIDER (deslizador)-->
 
-                <div class="alert alert-success fade show"> <!--Se cierra con un suavizado-->
+                <div class="alert alert-success fade show">
+                    <!--Se cierra con un suavizado-->
                     <strong>Increible! Te has registrado correctamente!</strong>
 
                     <!--Botón de cerrar-->
@@ -127,22 +134,24 @@
                     </button>
                 </div>
 
+                <!--Badgets-->
+                <h2>
+                    <span class="badge badge-success">
+                        Nuevo
+                    </span>
+                    Componentes de Bootstrap 4
+                </h2>
+
+                <p>
+                    <a href="#" class="badge badge-warning badge-pill">
+                        <!--badge-pill para redondearlo-->
+                        Articulo Nuevo
+                    </a>
+                </p>
+
             </div>
+
         </div>
-
-        <!--Badgets-->
-        <h2>
-            <span class="badge badge-success">
-                Nuevo
-            </span>
-            Componentes de Bootstrap 4
-        </h2>
-
-        <p>
-            <a href="#" class="badge badge-warning badge-pill"> <!--badge-pill para redondearlo-->
-                Articulo Nuevo
-            </a>
-        </p>
 
         <div class="row col-md-8">
 
@@ -176,7 +185,19 @@
                 </div>
             </div>
 
+        </div>
 
+        <div class="row">
+            <div class="jumbotron my-3 col-md-8 ml-3">
+                <h1 class="display-6">Bienvenido a mi web</h1>
+                <!--Para los tamaños de los textos es display-#-->
+                <p class="lead">Esto es un jumbotron en Bootstrap</p>
+                <!--Texto fino class="lead"-->
+                <hr class="my-2">
+                <p>Identificate en la web</p>
+                <a href="#" class="btn btn-primary btn-xs">Login</a>
+                <!--Tamaños de los botones btn-lg btn-xs btn-md-->
+            </div>
         </div>
 
     </div>
@@ -188,9 +209,9 @@
 
     <!--Javascript para el Slider (deslizador) Carousel-->
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             $(".carousel").carousel({
-                interval:3500 /*Tiempo de cambio (1000 = 1 segundo)*/
+                interval: 3500 /*Tiempo de cambio (1000 = 1 segundo)*/
             })
         });
     </script>
