@@ -202,8 +202,8 @@
 
                     var contador = 0;
 
-                    setInterval(function(){
-                        if(contador < 100){
+                    setInterval(function () {
+                        if (contador < 100) {
                             contador++;
                             var barra = document.querySelector("#barra-progreso");
                             barra.style.width = contador + "%";
@@ -214,109 +214,148 @@
 
                 </script>
 
-                <button type="button" class="btn-tool btn btn-danger mt-3" data-toggle="tooltip" data-placement="bottom" title="Si das click sacaras una alerta">
+                <button type="button" class="btn-tool btn btn-danger mt-3" data-toggle="tooltip" data-placement="bottom"
+                    title="Si das click sacaras una alerta">
                     Alerta
                 </button>
 
-                <button type="button" class="btn-tool btn btn-info mt-3" data-toggle="tooltip" data-placement="right" title="Si das click sacaras una alerta">
+                <button type="button" class="btn-tool btn btn-info mt-3" data-toggle="tooltip" data-placement="right"
+                    title="Si das click sacaras una alerta">
                     Alerta 2
                 </button>
 
-                <button type="button" class="btn-pop btn btn-warning mt-3" data-container="body" data-toggle="popover" data-placement="top" title="Mensaje" data-content="Esto es un pop-over">
+                <button type="button" class="btn-pop btn btn-warning mt-3" data-container="body" data-toggle="popover"
+                    data-placement="top" title="Mensaje" data-content="Esto es un pop-over">
                     Alerta 3
                 </button>
 
+                <hr>
+
+                <h3>Formulario</h3>
+                <form>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-propend">
+                                <span class="input-group-text rounded-0">Nombre</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Coloca tu nombre"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Genero</label>
+                        <select class="form-control">
+                            <option>Hombre</option>
+                            <option>Mujer</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" class="form-control" placeholder="Coloca el email"/>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Contraseña</label>
+                        <input type="password" class="form-control" placeholder="Coloca la contraseña"/>
+                    </div>
+
+                    <input type="submit" class="btn btn-success" value="Enviar">
             </div>
+
+            </form>
 
         </div>
 
-        <div class="row col-md-8">
+    </div>
 
-            <div class="card col mr-3 p-0">
-                <img class="card-img-top img-fluid" src="https://via.placeholder.com/300x200" alt="image" />
+    <div class="row col-md-8">
 
-                <div class="card-body">
-                    <h3 class="car-title">Tarjeta 1</h3>
-                    <p class="card-text">Hola entra en este articulo y aprenderas bootstrap</p>
-                    <a href="#" class="btn btn-success">Entrar</a>
-                </div>
-            </div>
+        <div class="card col mr-3 p-0">
+            <img class="card-img-top img-fluid" src="https://via.placeholder.com/300x200" alt="image" />
 
-            <div class="card col mr-3 p-0">
-                <img class="card-img-top img-fluid" src="https://via.placeholder.com/300x200" alt="image" />
-
-                <div class="card-body">
-                    <h3 class="car-title">Tarjeta 2</h3>
-                    <p class="card-text">Hola entra en este articulo y aprenderas bootstrap</p>
-                    <a href="#" class="btn btn-primary">Entrar</a>
-                </div>
-            </div>
-
-            <div class="card col mr-3 p-0">
-                <img class="card-img-top img-fluid" src="https://via.placeholder.com/300x200" alt="image" />
-
-                <div class="card-body">
-                    <h3 class="car-title">Tarjeta 3</h3>
-                    <p class="card-text">Hola entra en este articulo y aprenderas bootstrap</p>
-                    <a href="#" class="btn btn-warning">Entrar</a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="row">
-
-            <div class="clearfix"></div>
-
-            <nav aria-label="pagination" class="m-3">
-                <ul class="pagination">
-                    <li class="page-item">
-                        <a class="page-link" href="#">
-                            &laquo;
-                        </a>
-                    </li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">
-                            1
-                        </a>
-                    </li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">
-                            2
-                        </a>
-                    </li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">
-                            3
-                        </a>
-                    </li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">
-                            4
-                        </a>
-                    </li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">
-                            &raquo;
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-
-        </div>
-
-        <div class="row">
-            <div class="jumbotron my-3 col-md-8 ml-3">
-                <h1 class="display-6">Bienvenido a mi web</h1>
-                <!--Para los tamaños de los textos es display-#-->
-                <p class="lead">Esto es un jumbotron en Bootstrap</p>
-                <!--Texto fino class="lead"-->
-                <hr class="my-2">
-                <p>Identificate en la web</p>
-                <a href="#" class="btn btn-primary btn-xs">Login</a>
-                <!--Tamaños de los botones btn-lg btn-xs btn-md-->
+            <div class="card-body">
+                <h3 class="car-title">Tarjeta 1</h3>
+                <p class="card-text">Hola entra en este articulo y aprenderas bootstrap</p>
+                <a href="#" class="btn btn-success">Entrar</a>
             </div>
         </div>
+
+        <div class="card col mr-3 p-0">
+            <img class="card-img-top img-fluid" src="https://via.placeholder.com/300x200" alt="image" />
+
+            <div class="card-body">
+                <h3 class="car-title">Tarjeta 2</h3>
+                <p class="card-text">Hola entra en este articulo y aprenderas bootstrap</p>
+                <a href="#" class="btn btn-primary">Entrar</a>
+            </div>
+        </div>
+
+        <div class="card col mr-3 p-0">
+            <img class="card-img-top img-fluid" src="https://via.placeholder.com/300x200" alt="image" />
+
+            <div class="card-body">
+                <h3 class="car-title">Tarjeta 3</h3>
+                <p class="card-text">Hola entra en este articulo y aprenderas bootstrap</p>
+                <a href="#" class="btn btn-warning">Entrar</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="clearfix"></div>
+
+        <nav aria-label="pagination" class="m-3">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#">
+                        &laquo;
+                    </a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">
+                        1
+                    </a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">
+                        2
+                    </a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">
+                        3
+                    </a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">
+                        4
+                    </a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">
+                        &raquo;
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div class="row">
+        <div class="jumbotron my-3 col-md-8 ml-3">
+            <h1 class="display-6">Bienvenido a mi web</h1>
+            <!--Para los tamaños de los textos es display-#-->
+            <p class="lead">Esto es un jumbotron en Bootstrap</p>
+            <!--Texto fino class="lead"-->
+            <hr class="my-2">
+            <p>Identificate en la web</p>
+            <a href="#" class="btn btn-primary btn-xs">Login</a>
+            <!--Tamaños de los botones btn-lg btn-xs btn-md-->
+        </div>
+    </div>
 
     </div>
 
