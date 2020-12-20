@@ -1,0 +1,28 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url(img/Background.png);
+  background-size: cover;
+  background-position-y: -14px;
+  background-repeat: no-repeat;
+  height: 3390px;
+}
+
+.container-fluid h1 {
+  display: block;
+  margin-top: 32px;
+  margin-left: 190px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  height: 50px;
+  font-size: 41px;
+  letter-spacing: 3px;
+}
+.container-fluid .bg-dark {
+  background-color: black !important;
+}
+
+/*# sourceMappingURL=styles.css.map */
